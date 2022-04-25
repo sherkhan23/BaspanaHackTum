@@ -1,0 +1,199 @@
+html, body{
+    margin-left: 0;
+    padding: 0;
+
+}
+#navbar-links > li>a:hover {
+    text-decoration: underline;
+
+}
+#header > img{
+    border-radius: 50px;
+}
+#img-header{
+    border-radius: 40px;
+    display: flex;
+    height: 600px;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+#main-search{
+    width: 90%;
+    display: flex;
+    border-radius: 30px;
+    padding: 30px;
+}
+#btn-search-main{
+    width: 70px;
+    height: 50px;
+    border-radius: 200px;
+}
+#b-down{
+    width: 70px;
+    margin-top: 20px;
+    position: absolute;
+    /* here you can add bg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-left: 4px;
+    margin-top: 10px;
+}
+
+#aboutus-1{
+    width: 450px;
+    height: 650px;
+    display: flex;
+    position: absolute;
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(224, 235, 241);
+
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+#abour-us-pic{
+    width: 350px;
+    height: 450px;
+    margin-left: 250px;
+    border-radius: 40px;
+    margin-top: 100px;
+    border: 10px solid white;
+}
+#btn-abus{
+    color: white;
+    border-radius: 50px;
+
+}
+#abus2{
+    margin-top: 200px;
+}
+
+#card-img{
+    border-radius:  20px 20px 0 0 ;
+    height: 320px;
+}
+.card{
+    border-radius: 20px;
+}
+
+#carousel-example-2{
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+
+
+}
+#slide-img2{
+    border-radius: 20px;
+    height: 550px;
+    border: 10px solid white !important;
+}
+.pic-partner{
+    width:60%;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-m{
+    margin-left: 10px;
+}
+#foot-links > a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+#foot-links > a:hover {
+    text-decoration: underline;
+
+}
+
+.reviewh2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 70px;
+}
+.reviewh2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 1px;
+    background: #1c47e3;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+
+#temReviewMain{
+    color: #999;
+    overflow: hidden;
+    min-height: 120px;
+    font-size: 13px;
+}
+.reviewMain .media img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+}
+.testimonial {
+    padding: 0 15px 0 60px ;
+    position: relative;
+}
+.testimonial::before {
+    content: "\201C";
+    font-family: Arial,sans-serif;
+    color: #e2e2e2;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 54px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+.reviewMain .overview b {
+    text-transform: uppercase;
+    color: #1c47e3;
+}
+.reviewMain .carousel-indicators {
+    bottom: -40px;
+}
+
+#indecatorReviewMain li, .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 1px 3px;
+    box-sizing: border-box;
+}
+#indecatorReviewMain li {
+    background: #e2e2e2;
+    border: 4px solid #fff;
+}
+#indecatorReviewMain li.active {
+    color: #fff;
+    background: #1c47e3;
+    border: 5px double;
+}
