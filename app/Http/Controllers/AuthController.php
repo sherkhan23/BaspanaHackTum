@@ -23,7 +23,7 @@ class AuthController extends Controller
         ]);
 
         if(auth("web")->attempt($data)) {
-            return redirect(route("/"));
+            return redirect(route("home"));
         }
 
         return redirect(route("login"))->withErrors(["email" => "Пользователь не найден, либо данные введены не правильно"]);
@@ -33,7 +33,7 @@ class AuthController extends Controller
     {
         auth("web")->logout();
 
-        return redirect(route("/"));
+        return redirect(route("login"));
     }
 
     public function showRegisterForm()
@@ -45,6 +45,14 @@ class AuthController extends Controller
     {
         return view("auth.forgot");
     }
+
+  //  public function userData(){
+    //        $data = User::orderBy('id')->take(1)->get();
+    //        return view('/', [
+    //            'User' => $data,
+    //
+    //            ]);
+    //    }
 
 
     public function register(Request $request)
@@ -67,6 +75,7 @@ class AuthController extends Controller
             auth("web")->login($user);
         }
 
-        return redirect(route("/"));
+        return redirect('/');
     }
+
 }

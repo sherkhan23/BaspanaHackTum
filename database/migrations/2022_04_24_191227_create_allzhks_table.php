@@ -18,6 +18,10 @@ class CreateAllzhksTable extends Migration
             $table->string('zhkName');
             $table->integer('price');
             $table->text('picture');
+            $table->double('new_price');
+            $table->text('builder');
+            $table->text('address');
+            $table->text('link_builder');
             $table->timestamps();
         });
     }

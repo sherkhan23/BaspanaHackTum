@@ -13,20 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('home');
-
-
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/allzhk', function () {
-    return view('allzhk');
-});
 
 Route::get('/zhkdetails', function () {
     return view('zhkdetails');
-});
+})->name('zhkdetails');
 
 
 Route::middleware("auth:web")->group(function () {
@@ -43,6 +37,13 @@ Route::middleware("guest:web")->group(function () {
 
 });
 
-Route::get('/allData', '\App\Http\Controllers\AllzhkController@allData')->name('all-zhk');
+Route::get('/allData', '\App\Http\Controllers\AllzhkController@allData')->name('allData');
+
+
+
+Route::get('/newBuildings', '\App\Http\Controllers\AllzhkController@allData')->name('allData');
+
+
+Route::get('/{cat}/{zhk_id}', '\App\Http\Controllers\AllzhkController@getZhk')->name('show_zhk');
 
 

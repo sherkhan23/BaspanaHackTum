@@ -15,7 +15,7 @@
     <!-- Bootstrap 5 end -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>@yield('title')</title>
     <meta charset="UTF-8">
@@ -23,3 +23,11 @@
 
 </head>
 @section('content') @endsection
+@include('inc.navbar')
+@include('inc.header')
+@include('inc.popularzhk')
+@include('inc.aboutus')
+
+@include('inc.partners')
+@include('inc.feedback')
+@include('inc.footer')
