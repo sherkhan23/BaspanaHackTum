@@ -25,9 +25,9 @@
 
     <div class="row ml-5 mt-5">
         <div class="col-md-6">
-    <form action="/Users/sherkhankhanseiit/PycharmProjects/parsingRealEstate/predict.py" method="POST" class="form-control w-100 ml-5 shadow-lg" style="height: 80%; border-radius: 20px" >
-        <h3> Предсказание цен для жилых комплексов</h3>
-        <p> Введите данные не недострой нового жилового комплекса и узнайте примерную цену!</p>
+    <form action="/Users/sherkhankhanseiit/PycharmProjects/parsingRealEstate/predict.py" method="POST" class="form-control w-100 ml-5 shadow-lg" style="height: 65%; border-radius: 20px" >
+        <b class="text-primary"> Предсказание цен для жилых комплексов</b> <br>
+        <small> Введите данные не недострой нового жилового комплекса и узнайте примерную цену!</small>
         <small>Цену генерирует специальный machine learning код.</small> <br>
            <label for="rooms" class="mt-2">Комнаты:</label>
         <input name="rooms" type="text" class="w-full h-10 border border-gray-800 rounded px-3 " />
