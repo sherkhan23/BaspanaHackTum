@@ -78,4 +78,10 @@ class AuthController extends Controller
         return redirect('/');
     }
 
+    public function showProfile()
+    {
+        return view("profile");
+    }
+
+
 }

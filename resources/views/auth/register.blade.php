@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title') Register @endsection
-
+@include('inc.navbar')
 @section('content')
     <section class="vh-100" style="background-color: #eee;">
         <div class="container h-100">
@@ -11,10 +11,10 @@
                         <div class="card-body p-md-5">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-
+                                    <h2>Welcome to Baspana 👋</h2>
                     <h1 class="text-3xl font-medium">Регистрация</h1>
 
-                    <form action="{{ route("register_process") }}" class="space-y-5 mt-5" method="POST">
+                    <form action="{{ route("register_process") }}" class="space-y-5 mt-3" method="POST">
                         @csrf
 
                         <input name="name" type="text" class="w-full h-12 border border-gray-800 rounded px-3 " placeholder="Имя" />

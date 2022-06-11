@@ -85,6 +85,10 @@ html, body{
     border-radius:  20px 20px 0 0 ;
     height: 320px;
 }
+#zhk-img{
+    border-radius:  20px;
+    height: 320px;
+}
 .card{
     border-radius: 20px;
 }
@@ -200,4 +204,8 @@ html, body{
 .zhk_pic{
     height: 440px; width: 560px; border-radius: 10px;
 }
-
+#like-cart:hover {
+    height: 40px;
+    color: #0a53be;
+    transform: rotate(45deg);
+}
