@@ -149,7 +149,9 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-content-center mt-25">
-                    {{ $data->links() }}
+                     <span class="ml-3">
+                       {{ $data->withQueryString()->links() }}
+                   </span>
                     <a href="{{ $data->previousPageUrl() }}"><button class="btn btn-outline-dark">Back</button></a>
                     <a href={{ $data->nextPageUrl()  }}><button class="btn btn-outline-dark ml-3">Next</button></a>
                 </div>
@@ -175,12 +177,14 @@
                             <div class="product-show shorting-style">
                                 <h4>Расположение в Нур-Султане (Астане)</h4>
 
-                                  <select class="select-list" name="city_id" >
-                                     @foreach($cities as $city)
-                                          <option value="{{$city->id}}">{{$city->name}}</option>
-                                      @endforeach
-                                      </option>
-                                  </select>
+                                 <div class="form control">
+                                     <select  class="form-select" name="city_id" >
+                                         @foreach($cities as $city)
+                                             <option value="{{$city->id}}">{{$city->name}}</option>
+                                             @endforeach
+                                             </option>
+                                     </select>
+                                 </div>
 
                             </div>
                         </div>

@@ -146,12 +146,12 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-center align-content-center ">
+{{--    <div class="d-flex justify-content-center align-content-center ">--}}
 {{--        {{ session('cart')->links()}}--}}
-        <button class="btn btn-info btn-sm update-cart" data-id="{{  $details['id'] }}"><i class="fa fa-refresh"></i>Update</button>
-        <!-- this button is for update card -->
-        <button class="btn btn-danger btn-sm remove-from-cart delete ml-4" data-id="{{  $details['id'] }}"><i class="fa fa-trash-o"></i>Remove</button>
-    </div>
+{{--        <button class="btn btn-info btn-sm update-cart" data-id="{{  $details['id'] }}"><i class="fa fa-refresh"></i>Update</button>--}}
+{{--        <!-- this button is for update card -->--}}
+{{--        <button class="btn btn-danger btn-sm remove-from-cart delete ml-4" data-id="{{  $details['id'] }}"><i class="fa fa-trash-o"></i>Remove</button>--}}
+{{--    </div>--}}
 
 
 </div>
