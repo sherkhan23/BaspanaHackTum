@@ -148,9 +148,9 @@
 
     <div class="d-flex justify-content-center align-content-center ">
 {{--        {{ session('cart')->links()}}--}}
-        <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i>Update</button>
+        <button class="btn btn-info btn-sm update-cart" data-id="{{  $details['id'] }}"><i class="fa fa-refresh"></i>Update</button>
         <!-- this button is for update card -->
-        <button class="btn btn-danger btn-sm remove-from-cart delete ml-4" data-id="{{ $id }}"><i class="fa fa-trash-o"></i>Remove</button>
+        <button class="btn btn-danger btn-sm remove-from-cart delete ml-4" data-id="{{  $details['id'] }}"><i class="fa fa-trash-o"></i>Remove</button>
     </div>
 
 
@@ -159,8 +159,6 @@
 
 </html>
 @section('scripts')
-
-
     <script type="text/javascript">
         // this function is for update card
         $(".update-cart").click(function (e) {

@@ -25,15 +25,15 @@
 
     <div class="row ml-5 mt-5">
         <div class="col-md-6">
-    <form action="/Users/sherkhankhanseiit/PycharmProjects/parsingRealEstate/predict.py" method="POST" class="form-control w-100 ml-5 shadow-lg" style="height: 65%; border-radius: 20px" >
+    <form action="http://localhost:8080/request" method="GET" class="form-control w-100 ml-5 shadow-lg" style="height: 65%; border-radius: 20px" >
         <b class="text-primary"> Предсказание цен для жилых комплексов</b> <br>
         <small> Введите данные не недострой нового жилового комплекса и узнайте примерную цену!</small>
         <small>Цену генерирует специальный machine learning код.</small> <br>
            <label for="rooms" class="mt-2">Комнаты:</label>
         <input name="rooms" type="text" class="w-full h-10 border border-gray-800 rounded px-3 " />
 
-        <label for="class" class="mt-2">Класс жилья:</label>
-        <input name="class"  type="text" class="w-full h-10 border border-gray-800 rounded px-3 " />
+        <label for="ap_class" class="mt-2">Класс жилья:</label>
+        <input name="ap_class"  type="text" class="w-full h-10 border border-gray-800 rounded px-3 " />
 
         <label for="lift" class="mt-2">Наличие лифта:</label>
         <input name="lift" type="text" class="w-full h-10 border border-gray-800 rounded px-3 "  />
@@ -52,11 +52,7 @@
 
             <?php
 
-            $handle = popen('python /Users/sherkhankhanseiit/PycharmProjects/parsingRealEstate/predict.py 2>&1', 'r');
 
-            $read = fread($handle, 2096);
-            echo $read;
-            pclose($handle);
             ?>
 
         </div>

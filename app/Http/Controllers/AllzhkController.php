@@ -72,6 +72,7 @@ class AllzhkController extends Controller
         ]);
     }
 
+
     public function showCategory(Request $request, $cat_alias){
 
         $cat = Category::where('alias',$cat_alias )->first();

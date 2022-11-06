@@ -61,7 +61,7 @@ class CommentsController extends Controller
         //$comment = $commentQuery->paginate(5);
         Session::flash('success', 'Комментарии добавлены');
 
-        return redirect()->route('allData');
+        return redirect()->back();
 
       //return view('comment', compact('comment'));
     }

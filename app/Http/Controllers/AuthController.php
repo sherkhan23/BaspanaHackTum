@@ -23,7 +23,7 @@ class AuthController extends Controller
         ]);
 
         if(auth("web")->attempt($data)) {
-            return redirect(route("home"));
+            return redirect(route("/home"));
         }
 
         return redirect(route("login"))->withErrors(["email" => "Пользователь не найден, либо данные введены не правильно"]);
@@ -71,11 +71,10 @@ class AuthController extends Controller
 
         if($user) {
             //event(new Registered($user));
-
             auth("web")->login($user);
         }
 
-        return redirect('/');
+        return redirect('/home');
     }
 
     public function showProfile()

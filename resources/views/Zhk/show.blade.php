@@ -425,7 +425,6 @@
                                             </form>
                                         </div>
                                     </div>
-
                                 @endguest
                         </div>
                     </div>
